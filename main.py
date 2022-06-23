@@ -87,15 +87,15 @@ def main():
     #ANNUITY_DISCOUNT_RATE_TEXT="assumed annuity discount rate"
 
     #Pension Offer Option 1.1 - Retirement option=Age 65
-    pspp_option1={} #empty dict
-    pspp_option1["ret_option"]="Age 65"
-    pspp_option1["ret_year"]= date.today().year+years_till_retirement
-    pspp_option1["ann_pens65"]=guaranteed_lifetime_annual_pension
+    pension_option1={} #empty dict
+    pension_option1["ret_option"]="Age 65"
+    pension_option1["ret_year"]= date.today().year+years_till_retirement
+    pension_option1["ann_pens65"]=guaranteed_lifetime_annual_pension
 
     print ("Assumptions:")
     print("Pension Buyback OFFER Option 1.1 - Retirement option=Age 65")
     #print all text labels, one per line
-    for key, value in pspp_option1.items():
+    for key, value in pension_option1.items():
         print(key, value)
 
         
@@ -147,7 +147,7 @@ def main():
     pv65=0.00
     rate=annuity_discount_rate/100
     nper=pension_length #years from 65 till est death
-    pmt=-pspp_option1["ann_pens65"]
+    pmt=-pension_option1["ann_pens65"]
     pv65=npf.pv(rate, nper, pmt )
     currency = "${:,.2f}".format(pv65)
 
