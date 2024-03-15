@@ -23,7 +23,8 @@ The purpose of this code is to estimate:
 
 ## User Interface
 
-The software is runs in Windows or MacOS terminal. There is currently no web version.
+Pension Buyback Analysis app is designed as a command-line application (or console application) which is to be used from a text interface, such as a shell.
+The software has been tested to runs in Windows terminal. There is currently no web version.
 
 ## Expected user input
 
