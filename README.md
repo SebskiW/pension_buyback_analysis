@@ -24,7 +24,7 @@ The purpose of this code is to estimate:
 ## User Interface
 
 Pension Buyback Analysis app is designed as a command-line application (or console application) which is to be used from a text interface, such as a shell.
-The software has been tested to runs in Windows terminal. There is currently no web version.
+The software has been tested to run in a Windows terminal. There is currently no web version.
 
 ## Expected user input
 
